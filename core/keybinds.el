@@ -1,9 +1,16 @@
+;; -*- lexical-binding: t -*- 
+
+(elpaca (general :wait t))
+
+(elpaca which-key
+  (which-key-mode 1))
+
 (general-create-definer my/leader
   :states '(normal visual)
   :keymaps 'override
   :prefix "SPC")
 
-(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l)) ;; TODO: doen't live here needs to change place this line
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 (my/leader
   "b" (cons "buffers" (make-sparse-keymap))

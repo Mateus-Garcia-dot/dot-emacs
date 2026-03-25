@@ -36,6 +36,9 @@
   "f" (cons "file" (make-sparse-keymap))
   "fj" '("dired" . dired-jump)
 
+  "s" (cons "spell" (make-sparse-keymap))
+  "ss" '("correct" . jinx-correct)
+
   "SPC" '("M-x" . counsel-M-x)
   "/" '("search project" . counsel-rg)
   )

@@ -1,8 +1,12 @@
 ;; -*- lexical-binding: t -*-
 
 ;; basic packages
+(setq evil-want-keybinding nil)
 (elpaca evil
   (evil-mode 1))
+
+(elpaca evil-collection
+  (evil-collection-init))
 
 (elpaca general)
 
@@ -22,6 +26,10 @@
 
 (elpaca projectile
   (projectile-mode 1))
+
+(elpaca transient)
+
+(elpaca magit)
 
 (elpaca-wait)
 

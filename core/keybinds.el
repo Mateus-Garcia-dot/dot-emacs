@@ -25,6 +25,9 @@
   "pb" '("switch buffer" . projectile-switch-to-buffer)
   "pk" '("kill project" . projectile-kill-buffers)
 
+  "g" (cons "git" (make-sparse-keymap))
+  "gs" '("status" . magit-status)
+
   "SPC" '("M-x" . counsel-M-x)
   "/" '("search project" . counsel-rg)
   )

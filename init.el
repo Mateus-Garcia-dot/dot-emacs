@@ -33,5 +33,6 @@
 
 (elpaca-wait)
 
+(load (expand-file-name "configs/theme-config.el" (file-name-directory load-file-name)))
 (load (expand-file-name "core/keybinds.el" (file-name-directory load-file-name)))
 (load (expand-file-name "configs/dired-config.el" (file-name-directory load-file-name)))

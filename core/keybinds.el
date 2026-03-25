@@ -28,6 +28,9 @@
   "g" (cons "git" (make-sparse-keymap))
   "gs" '("status" . magit-status)
 
+  "f" (cons "file" (make-sparse-keymap))
+  "fj" '("dired" . dired-jump)
+
   "SPC" '("M-x" . counsel-M-x)
   "/" '("search project" . counsel-rg)
   )

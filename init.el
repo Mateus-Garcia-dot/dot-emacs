@@ -1,6 +1,5 @@
 ;; -*- lexical-binding: t -*-
 
-
 ;; basic packages
 (elpaca evil
   (evil-mode 1))
@@ -20,6 +19,9 @@
   (ivy-rich-mode 1))
 
 (elpaca ace-window)
+
+(elpaca projectile
+  (projectile-mode 1))
 
 (elpaca-wait)
 

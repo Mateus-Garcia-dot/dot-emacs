@@ -19,6 +19,14 @@
   "wd" '("delete window" . delete-window)
   "wD" '("ace delete window" . ace-delete-window)
 
+  "p" (cons "projects" (make-sparse-keymap))
+  "pp" '("switch project" . projectile-switch-project)
+  "pf" '("find file" . projectile-find-file)
+  "pb" '("switch buffer" . projectile-switch-to-buffer)
+  "pk" '("kill project" . projectile-kill-buffers)
+
+  "SPC" '("M-x" . counsel-M-x)
+  "/" '("search project" . counsel-rg)
   )
 
 

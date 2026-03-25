@@ -14,6 +14,22 @@
 (setq inhibit-splash-screen t)
 (setq inhibit-startup-message t)
 
+;; set a place to temp files
+
+(setq user-emacs-directory (expand-file-name "~/.cache/emacs/"))
+
+(setq backup-directory-alist
+      `(("." . ,(expand-file-name "backups" user-emacs-directory))))
+
+(setq auto-save-file-name-transforms
+      `((".*" ,(expand-file-name "auto-saves/" user-emacs-directory) t)))
+
+(setq lock-file-name-transforms
+      `((".*" ,(expand-file-name "locks/" user-emacs-directory) t)))
+
+(setq create-lockfiles nil)
+(setq make-backup-files nil)
+
 ;; elpaca install
 (defvar elpaca-installer-version 0.12)
 (defvar elpaca-directory (expand-file-name "elpaca/" user-emacs-directory))

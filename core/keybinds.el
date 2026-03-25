@@ -10,8 +10,6 @@
   :keymaps 'override
   :prefix "SPC")
 
-(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
-
 (my/leader
   "b" (cons "buffers" (make-sparse-keymap))
   "bb" '("switch buffer" . counsel-switch-buffer)

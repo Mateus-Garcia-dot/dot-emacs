@@ -1,14 +1,9 @@
 ;; -*- lexical-binding: t -*-
 
+(load (expand-file-name "configs/evil-config.el" (file-name-directory load-file-name)))
+
 ;; basic packages
-(setq evil-want-keybinding nil)
-(elpaca evil
-  (evil-mode 1))
-
-(elpaca evil-collection
-  (evil-collection-init))
-
-(elpaca general)
+(elpaca (general :wait t))
 
 (elpaca which-key
   (which-key-mode 1))
@@ -31,8 +26,6 @@
 
 (elpaca magit)
 
-(elpaca-wait)
-
 (load (expand-file-name "configs/theme-config.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/keybinds.el" (file-name-directory load-file-name)))
 (load (expand-file-name "configs/dired-config.el" (file-name-directory load-file-name)))
+(load (expand-file-name "core/keybinds.el" (file-name-directory load-file-name)))

@@ -1,6 +1,8 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca jinx
+(use-package jinx
+  :ensure t
+  :config
   (dolist (hook '(text-mode-hook prog-mode-hook conf-mode-hook))
     (add-hook hook #'jinx-mode))
   (setq-default jinx-languages "en_US")

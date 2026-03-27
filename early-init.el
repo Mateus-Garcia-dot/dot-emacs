@@ -19,7 +19,6 @@
 (setq inhibit-startup-message t)
 
 ;; set a place to temp files
-
 (setq user-emacs-directory
       (expand-file-name ".local/" my/config-dir))
 
@@ -71,3 +70,7 @@
     (let ((load-source-file-function nil)) (load "./elpaca-autoloads"))))
 (add-hook 'after-init-hook #'elpaca-process-queues)
 (elpaca `(,@elpaca-order))
+
+;; elpaca config
+(elpaca (elpaca-use-package :wait t)
+  (elpaca-use-package-mode))

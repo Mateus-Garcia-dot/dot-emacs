@@ -1,9 +1,11 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca (general :wait t))
+(use-package general
+  :ensure (:wait t))
 
-(elpaca which-key
-  (which-key-mode 1))
+(use-package which-key
+  :ensure t
+  :config (which-key-mode 1))
 
 (general-create-definer my/leader
   :states '(normal visual)

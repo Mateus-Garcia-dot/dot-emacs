@@ -1,13 +1,21 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca doom-themes
-  (load-theme 'doom-city-lights t))
 
-(elpaca spacious-padding
+(use-package doom-themes
+  :ensure t
+  :config
+  (load-theme 'doom-city-lights t)
+  )
+
+(use-package spacious-padding
+  :ensure t
+  :config
   (setq spacious-padding-widths
         '(:internal-border-width 15
           :right-divider-width 1))
-  (spacious-padding-mode 1))
+  (spacious-padding-mode 1)
+  )
+
 
 (setq-default mode-line-format nil)
 

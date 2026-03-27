@@ -1,6 +1,6 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca ace-window)
+(use-package ace-window :ensure t)
 
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 

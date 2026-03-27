@@ -1,8 +1,12 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca treesit-auto
+
+(use-package treesit-auto
+  :ensure t
+  :config
   (require 'treesit-auto)
   (setq treesit-auto-install 'prompt)
-  (global-treesit-auto-mode))
+  (global-treesit-auto-mode)
+  )
 
 (provide 'core-treesitter)

@@ -1,6 +1,7 @@
 ;; -*- lexical-binding: t -*-
 
-(elpaca transient)
-(elpaca magit)
+
+(use-package transient :ensure t)
+(use-package magit :ensure t)
 
 (provide 'core-git)

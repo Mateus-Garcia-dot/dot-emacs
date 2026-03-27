@@ -8,4 +8,9 @@
 
 (setq-default mode-line-format nil)
 
+(set-face-attribute 'default nil
+  :font "JetBrainsMono Nerd Font Mono"
+  :height 120
+  :weight 'normal)
+
 (provide 'core-theme)

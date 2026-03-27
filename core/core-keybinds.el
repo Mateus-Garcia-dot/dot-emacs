@@ -1,16 +1,16 @@
 ;; -*- lexical-binding: t -*-
 
 (use-package general
-  :ensure (:wait t))
+  :ensure (:wait t)
+  :config
+  (general-create-definer my/leader
+    :states '(normal visual motion)
+    :keymaps 'override
+    :prefix "SPC"))
 
 (use-package which-key
-  :ensure t
+  :ensure nil
   :config (which-key-mode 1))
-
-(general-create-definer my/leader
-  :states '(normal visual)
-  :keymaps 'override
-  :prefix "SPC")
 
 (my/leader
   "b" (cons "buffers" (make-sparse-keymap))

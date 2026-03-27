@@ -16,7 +16,8 @@
 
 ;; set a place to temp files
 
-(setq user-emacs-directory (expand-file-name "~/.cache/emacs/"))
+(setq user-emacs-directory
+      (expand-file-name ".local/" (file-name-directory load-file-name)))
 
 (setq backup-directory-alist
       `(("." . ,(expand-file-name "backups" user-emacs-directory))))
@@ -26,9 +27,6 @@
 
 (setq lock-file-name-transforms
       `((".*" ,(expand-file-name "locks/" user-emacs-directory) t)))
-
-(setq create-lockfiles nil)
-(setq make-backup-files nil)
 
 ;; elpaca install
 (defvar elpaca-installer-version 0.12)

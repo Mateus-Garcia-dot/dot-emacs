@@ -1,5 +1,9 @@
 ;; -*- lexical-binding: t -*-
 
+;; Utilities
+(defvar my/config-dir (file-name-directory load-file-name)
+  "The root directory of the Emacs configuration.")
+
 ;; remove ui defaults
 (setq default-frame-alist
       '((menu-bar-lines . 0)
@@ -17,7 +21,7 @@
 ;; set a place to temp files
 
 (setq user-emacs-directory
-      (expand-file-name ".local/" (file-name-directory load-file-name)))
+      (expand-file-name ".local/" my/config-dir))
 
 (setq backup-directory-alist
       `(("." . ,(expand-file-name "backups" user-emacs-directory))))

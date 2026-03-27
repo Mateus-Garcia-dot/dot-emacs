@@ -26,3 +26,5 @@
 
 (add-hook 'after-change-major-mode-hook
           #'(lambda () (modify-syntax-entry ?_ "w")))
+
+(provide 'core-evil)

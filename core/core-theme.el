@@ -27,3 +27,5 @@
 
 (window-divider-mode 1)
 (my/set-window-divider-faces)
+
+(provide 'core-theme)

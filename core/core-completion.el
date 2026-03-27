@@ -11,3 +11,5 @@
 
 (elpaca projectile
   (projectile-mode 1))
+
+(provide 'core-completion)

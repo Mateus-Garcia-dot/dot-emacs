@@ -1,4 +1,4 @@
-;; -*- lexical-binding: t -*- 
+;; -*- lexical-binding: t -*-
 
 (elpaca (general :wait t))
 
@@ -43,4 +43,4 @@
   "/" '("search project" . counsel-rg)
   )
 
-
+(provide 'core-keybinds)

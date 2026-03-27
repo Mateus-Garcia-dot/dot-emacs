@@ -5,3 +5,5 @@
   (setq dired-listing-switches "-alhv --group-directories-first --dired")
   (setq wdired-allow-to-change-permissions t)
   (add-hook 'dired-mode-hook #'dired-hide-details-mode))
+
+(provide 'core-dired)

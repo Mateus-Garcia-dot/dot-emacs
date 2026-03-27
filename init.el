@@ -1,11 +1,13 @@
 ;; -*- lexical-binding: t -*-
 
-(load (expand-file-name "core/evil.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/keybinds.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/navigation.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/completion.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/git.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/theme.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/dired.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/spellchecker.el" (file-name-directory load-file-name)))
-(load (expand-file-name "core/treesitter.el" (file-name-directory load-file-name)))
+(add-to-list 'load-path (expand-file-name "core" my/config-dir))
+
+(require 'core-evil)
+(require 'core-keybinds)
+(require 'core-navigation)
+(require 'core-completion)
+(require 'core-git)
+(require 'core-theme)
+(require 'core-dired)
+(require 'core-spellchecker)
+(require 'core-treesitter)

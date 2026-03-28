@@ -36,6 +36,13 @@
     "s" (cons "spell" (make-sparse-keymap))
     "ss" '("correct" . jinx-correct)
 
+    "l" (cons "lsp" (make-sparse-keymap))
+    "lr" '("rename" . eglot-rename)
+    "la" '("code actions" . eglot-code-actions)
+    "lf" '("format" . eglot-format)
+    "ld" '("diagnostics" . flymake-show-buffer-diagnostics)
+    "le" '("show error" . flymake-show-diagnostic)
+
     "SPC" '("M-x" . counsel-M-x)
     "/" '("search project" . counsel-rg)
     )

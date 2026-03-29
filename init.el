@@ -15,3 +15,4 @@
 (require 'core-lsp)
 
 (require 'lang-js)
+(require 'lang-bash)

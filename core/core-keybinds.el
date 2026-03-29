@@ -43,6 +43,10 @@
     "ld" '("diagnostics" . flymake-show-buffer-diagnostics)
     "le" '("show error" . flymake-show-diagnostic)
 
+    "!" (cons "shell" (make-sparse-keymap))
+    "!!" '("run in root" . projectile-run-shell-command-in-root)
+    "!." '("run here" . shell-command)
+
     "SPC" '("M-x" . execute-extended-command)
     "/" '("search project" . consult-ripgrep)
     )

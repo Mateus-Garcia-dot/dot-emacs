@@ -9,11 +9,6 @@
   :config
   (setq eglot-autoshutdown t))
 
-(add-to-list 'display-buffer-alist
-             '("^\\*eldoc"
-               (display-buffer-reuse-window display-buffer-at-bottom)
-               (window-height . 4)))
-
 (add-hook 'eglot-managed-mode-hook #'flymake-mode)
 
 (evil-define-key 'normal prog-mode-map

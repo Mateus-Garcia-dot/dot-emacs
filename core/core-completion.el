@@ -45,4 +45,21 @@
   :after vertico
   :init (marginalia-mode))
 
+(use-package corfu
+  :ensure t
+  :after vertico
+  :custom
+  (corfu-auto t)
+  (corfu-cycle t)
+  (corfu-preselect 'prompt)
+  :bind
+  (:map corfu-map
+        ("TAB" . corfu-next)
+        ([tab] . corfu-next)
+        ("S-TAB" . corfu-previous)
+        ([backtab] . corfu-previous))
+
+  :init
+  (global-corfu-mode))
+
 (provide 'core-completion)

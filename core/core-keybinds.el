@@ -9,7 +9,7 @@
     :prefix "SPC")
   (my/leader
     "b" (cons "buffers" (make-sparse-keymap))
-    "bb" '("switch buffer" . counsel-switch-buffer)
+    "bb" '("switch buffer" . consult-buffer)
 
     "w" (cons "windows" (make-sparse-keymap))
     "wh" '("window left" . windmove-left)
@@ -43,8 +43,8 @@
     "ld" '("diagnostics" . flymake-show-buffer-diagnostics)
     "le" '("show error" . flymake-show-diagnostic)
 
-    "SPC" '("M-x" . counsel-M-x)
-    "/" '("search project" . counsel-rg)
+    "SPC" '("M-x" . execute-extended-command)
+    "/" '("search project" . consult-find)
     )
   )
 

@@ -44,7 +44,7 @@
     "le" '("show error" . flymake-show-diagnostic)
 
     "SPC" '("M-x" . execute-extended-command)
-    "/" '("search project" . consult-find)
+    "/" '("search project" . consult-ripgrep)
     )
   )
 

@@ -33,7 +33,14 @@
   :after evil
   :config (global-evil-quickscope-always-mode 1))
 
+(use-package evil-commentary
+  :ensure t
+  :after evil
+  :config (evil-commentary-mode 1))
+
 (add-hook 'after-change-major-mode-hook
           #'(lambda () (modify-syntax-entry ?_ "w")))
+
+(electric-pair-mode 1)
 
 (provide 'core-evil)

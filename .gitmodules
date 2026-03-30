@@ -1,0 +1,3 @@
+[submodule ".lsp-servers/phpactor"]
+	path = .lsp-servers/phpactor
+	url = https://github.com/phpactor/phpactor.git

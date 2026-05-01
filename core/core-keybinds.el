@@ -26,6 +26,7 @@
     "pf" '("find file" . projectile-find-file)
     "pb" '("switch buffer" . projectile-switch-to-buffer)
     "pk" '("kill project" . projectile-kill-buffers)
+    "pt" '("toggle test" . my/php-toggle-test)
 
     "g" (cons "git" (make-sparse-keymap))
     "gs" '("status" . magit-status)

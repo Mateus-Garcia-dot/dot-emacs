@@ -48,6 +48,9 @@
     "!!" '("run in root" . projectile-run-shell-command-in-root)
     "!." '("run here" . shell-command)
 
+    "a" (cons "ai" (make-sparse-keymap))
+    "aa" '("menu" . claude-code-ide-menu)
+
     "o" (cons "org" (make-sparse-keymap))
     "op" '("present" . org-present)
 

@@ -15,6 +15,7 @@
 (require 'core-treesitter)
 (require 'core-lsp)
 (require 'core-dap)
+(require 'core-ai)
 
 (require 'lang-js)
 (require 'lang-bash)

@@ -17,3 +17,4 @@
 (require 'lang-js)
 (require 'lang-bash)
 (require 'lang-php)
+(require 'lang-org)

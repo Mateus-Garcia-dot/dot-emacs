@@ -47,6 +47,9 @@
     "!!" '("run in root" . projectile-run-shell-command-in-root)
     "!." '("run here" . shell-command)
 
+    "o" (cons "org" (make-sparse-keymap))
+    "op" '("present" . org-present)
+
     "SPC" '("M-x" . execute-extended-command)
     "/" '("search project" . consult-ripgrep)
     )

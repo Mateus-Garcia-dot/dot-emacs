@@ -4,8 +4,9 @@
   :ensure t
   :config
   (setq-default jinx-languages "en_US")
-  (global-jinx-mode)
-  ;; there will be the need to add more font faces here for now i guess its only strings that is here
-  )
+  (add-to-list 'jinx-camel-modes 'php-ts-mode)
+  (setq jinx-include-faces
+        (assq-delete-all 'prog-mode jinx-include-faces))
+  (global-jinx-mode))
 
 (provide 'core-spellchecker)

@@ -69,6 +69,10 @@
     "tt" '("toggle" . vterm-toggle)
     "tn" '("new" . vterm)
 
+    "q" (cons "quit" (make-sparse-keymap))
+    "qr" '("restart" . restart-emacs)
+    "qq" '("quit" . save-buffers-kill-emacs)
+
     "SPC" '("M-x" . execute-extended-command)
     "/" '("search project" . consult-ripgrep)
     )

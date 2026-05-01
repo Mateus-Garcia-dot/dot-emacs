@@ -50,6 +50,17 @@
     "o" (cons "org" (make-sparse-keymap))
     "op" '("present" . org-present)
 
+    "d" (cons "debug" (make-sparse-keymap))
+    "dd" '("start"        . dap-debug)
+    "dq" '("stop"         . dap-disconnect)
+    "dc" '("continue"     . dap-continue)
+    "dn" '("step over"    . dap-next)
+    "di" '("step in"      . dap-step-in)
+    "do" '("step out"     . dap-step-out)
+    "db" '("breakpoint"   . dap-breakpoint-toggle)
+    "dB" '("breakpoints"  . dap-ui-breakpoints)
+    "dr" '("restart"      . dap-restart-frame)
+
     "SPC" '("M-x" . execute-extended-command)
     "/" '("search project" . consult-ripgrep)
     )

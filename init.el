@@ -13,6 +13,7 @@
 (require 'core-spellchecker)
 (require 'core-treesitter)
 (require 'core-lsp)
+(require 'core-dap)
 
 (require 'lang-js)
 (require 'lang-bash)

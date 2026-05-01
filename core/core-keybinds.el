@@ -65,6 +65,10 @@
     "dB" '("breakpoints"  . dap-ui-breakpoints)
     "dr" '("restart"      . dap-restart-frame)
 
+    "t" (cons "terminal" (make-sparse-keymap))
+    "tt" '("toggle" . vterm-toggle)
+    "tn" '("new" . vterm)
+
     "SPC" '("M-x" . execute-extended-command)
     "/" '("search project" . consult-ripgrep)
     )

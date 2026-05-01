@@ -16,6 +16,7 @@
 (require 'core-lsp)
 (require 'core-dap)
 (require 'core-ai)
+(require 'core-vterm)
 
 (require 'lang-js)
 (require 'lang-bash)
